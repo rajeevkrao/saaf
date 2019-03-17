@@ -26,7 +26,6 @@
         "tape": "^4.7.0"
     },
     "scripts": {
-        "build": "gulp",
         "start": "node server.js"
     }
 }
