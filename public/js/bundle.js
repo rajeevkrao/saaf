@@ -2,7 +2,13 @@
 var Typed = require('typed.js');
 
 var options = {
-	strings: [" CLEAN ENERGY.", " ORGANIC FERTILIZER.", " $$$$.", " QUALITY OF LIFE."],
+	strings: [" CLEAN COOKING.",
+			  " 'NATURAL' GAS.", 
+			  " $$$$.", 
+			  " RENEWABLE POWER.", 
+			  " SAFE FERTILIZER ", 
+			  " CO2 EMISSION REDUCTION.",
+			  " QUALITY OF LIFE."],
 	typeSpeed: 40,
 	backSpeed: 40,
  	loop: true,
