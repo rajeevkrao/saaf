@@ -23,7 +23,8 @@
         "pg": "^7.4.1",
         "request": "^2.81.0",
         "scrollreveal": "3.3.6",
-        "tape": "^4.7.0"
+        "tape": "^4.7.0",
+        "typed.js": "^2.0.10"
     },
     "scripts": {
         "start": "node server.js"

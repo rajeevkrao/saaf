@@ -35,34 +35,6 @@
     }
 }
 
-.header-left {
-    position: relative;
-    padding-right: 0px;
-    @media(max-width: 767px) {
-        display: none;
-    }
-    .video-popup{
-        position: absolute;
-        bottom: 110px;
-        left: -15px;
-        @media(max-width: 991px) {
-            bottom: 60px;
-        }
-        .watch{
-            color: #fff;
-            padding-left: 50px;
-            h5{
-                font-size: 18px;
-                color: #fff;
-            }
-            p{
-                text-transform: uppercase;
-                font-size: 12px;
-                margin: 0;
-            }
-        }
-    }
-}
 
 .header-right {
     padding-left: 20%;
