@@ -29,12 +29,14 @@ app.post('/_send_email', function(request, response) {
   	var subject = request.body.subject; 
   	var message = request.body.message;
 
-	const text = "Name:" + name + "\n" + message + "\n";
+  	const text = "View this message in html"
+	const html = "Name:" + name + "<br>" + message + "<br>";
 	const msg = {
 		  to: 'vig9295@gmail.com',
 		  from: email,
 		  subject: subject,
 		  text: text,
+		  html: html
 		};
 		sgMail.send(msg);
 	response.redirect('/');

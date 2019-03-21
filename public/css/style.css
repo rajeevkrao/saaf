@@ -248,7 +248,7 @@ button:focus {
   transition: all 200ms ease;
   -webkit-box-shadow: 0px 10px 30px rgba(39, 0, 110, 0.3);
   box-shadow: 0px 10px 30px rgba(39, 0, 110, 0.3);
-  background: #424242;
+  background: #727272;
 }
 
 .video-play-button span {
@@ -491,7 +491,7 @@ button:focus {
 
 .side_menu .menu-left li a:hover,
 .side_menu .menu-left li .dropdown-toggle:hover {
-  color: #424242;
+  color: #727272;
 }
 
 .side_menu .menu-left li .dropdown-toggle {
@@ -512,7 +512,7 @@ button:focus {
   top: -36px !important;
   left: 110px !important;
   border: 0;
-  background: #424242;
+  background: #727272;
   border-radius: 0px;
 }
 
@@ -1096,7 +1096,7 @@ button:focus {
 }
 
 .counter_area .single_counter:hover {
-  background: #424242;
+  background: #727272;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -1564,7 +1564,7 @@ button:focus {
 }
 
 .contact-form-section .main_btn {
-  border-color: #424242;
+  border-color: #727272;
   color: #fff;
   cursor: pointer;
   margin-top: 30px;
@@ -1585,8 +1585,8 @@ button:focus {
 }
 
 .contact-form-section .main_btn:hover {
-  background: #424242;
-  border-color: #424242;
+  background: #727272;
+  border-color: #727272;
   color: #fff;
 }
 
