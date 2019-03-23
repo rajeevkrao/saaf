@@ -4,7 +4,7 @@ var Typed = require('typed.js');
 var options = {
 	strings: [" CLEAN COOKING.",
 			  " 'NATURAL' GAS.", 
-			  " $$$$.", 
+			  " $$$.", 
 			  " RENEWABLE POWER.", 
 			  " SAFE FERTILIZER ", 
 			  " CO2 EMISSION REDUCTION.",
