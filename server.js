@@ -25,21 +25,25 @@ app.get('/contact',function(request, response){
 
 app.post('/_send_email', function(request, response) {
 	var name = request.body.name;
-  	var email = request.body.email;
+	var email = request.body.email;
   	var subject = request.body.subject; 
   	var message = request.body.message;
 
   	const text = "View this message in html"
-	const html = "Name:" + name + "<br>" + message + "<br>";
+	const html = "NAME:" + name + "<br>" + message + "<br>" + "EMAIL: " + email;
 	const msg = {
-		  to: 'vig9295@gmail.com',
-		  from: email,
-		  subject: subject,
-		  text: text,
-		  html: html
-		};
-		sgMail.send(msg);
-	response.redirect('/');
+	  	to: 'vig9295@gmail.com',
+	  	from: 'vig9295@gmail.com',
+	  	subject: subject,
+	  	text: text,
+	  	html: html
+	};
+	sgMail.send(msg, function(err, json){
+    	if(err) { 
+    		console.log(err);
+    	}
+    	response.redirect('/');
+	});
 });
 
 app.listen(PORT);

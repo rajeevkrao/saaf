@@ -6,7 +6,13 @@ body {
     color: $text-color;
 }
 
-h1,
+h1 {
+    font-family: $title-font;
+    font-weight: 400;
+    color: $title-color;
+    font-size: 2em;
+}
+
 h2,
 h3,
 h4,
@@ -15,6 +21,20 @@ h6 {
     font-family: $title-font;
     font-weight: 400;
     color: $title-color;
+}
+
+p {
+    font-size: 1em;
+    color: #666; 
+    line-height: 30px; 
+    font-weight: light;
+}
+
+small {
+    font-size: 1em;
+    color: #666; 
+    line-height: 20px; 
+    font-weight: light;
 }
 
 .list {
@@ -41,3 +61,88 @@ button:focus {
     outline: none;
     box-shadow: none;
 }
+
+/* CUSTOM STYLING */
+
+.title-container {
+    margin-left: 6%;
+}
+
+.subtitle-text {
+    width: 50%; 
+    margin-bottom: 20px; 
+    color: #666; 
+    line-height: 30px; 
+    font-weight: light
+}
+
+.home-banner-area {
+    background: url('../img/background.png') no-repeat right;
+}
+
+.column-margin {
+    margin-bottom: 20px;
+}
+
+
+
+/* mobile only styles when the device is 0-600px in maximum width */
+
+@media only screen 
+and (max-device-width: 600px)
+{
+    h1 {
+        font-size:1em;
+    }
+
+
+    .title-container {
+       margin: 25% 3% 10% 3%;
+    }
+
+    .subtitle-text {
+        width: 100%;
+        margin: 30px 0; 
+        color: #666; 
+        line-height: 30px; 
+        font-weight: light
+    }
+
+    .home-banner-area {
+        background: none;
+    }
+
+    .side-image {
+        display: none;
+    }
+
+    .right-content{
+        display: none;
+    }
+}
+
+/* mobile only styles when the device is up to 1000px in maximum width */
+
+@media only screen 
+and (max-device-width: 1000px)
+{ 
+
+    h1 {
+        font-size:1.7em;
+    }
+
+    .subtitle-text {
+        margin-bottom: 20px; 
+        color: #666; 
+        line-height: 30px; 
+        font-weight: light
+    }
+
+    .side-image {
+        display: none;
+    }
+
+}
+
+
+

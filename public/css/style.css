@@ -53,7 +53,13 @@ body {
   color: #000;
 }
 
-h1,
+h1 {
+  font-family: "Open", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 2em;
+}
+
 h2,
 h3,
 h4,
@@ -62,6 +68,20 @@ h6 {
   font-family: "Open", sans-serif;
   font-weight: 400;
   color: #000;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  line-height: 30px;
+  font-weight: light;
+}
+
+small {
+  font-size: 1em;
+  color: #666;
+  line-height: 20px;
+  font-weight: light;
 }
 
 .list {
@@ -91,6 +111,69 @@ button:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+/* CUSTOM STYLING */
+.title-container {
+  margin-left: 6%;
+}
+
+.subtitle-text {
+  width: 50%;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 30px;
+  font-weight: light;
+}
+
+.home-banner-area {
+  background: url("../img/background.png") no-repeat right;
+}
+
+.column-margin {
+  margin-bottom: 20px;
+}
+
+/* mobile only styles when the device is 0-600px in maximum width */
+@media only screen and (max-device-width: 600px) {
+  h1 {
+    font-size: 1em;
+  }
+  .title-container {
+    margin: 25% 3% 10% 3%;
+  }
+  .subtitle-text {
+    width: 100%;
+    margin: 30px 0;
+    color: #666;
+    line-height: 30px;
+    font-weight: light;
+  }
+  .home-banner-area {
+    background: none;
+  }
+  .side-image {
+    display: none;
+  }
+  .right-content {
+    display: none;
+  }
+}
+
+/* mobile only styles when the device is up to 1000px in maximum width */
+@media only screen and (max-device-width: 1000px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  .subtitle-text {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 30px;
+    font-weight: light;
+  }
+  .side-image {
+    display: none;
+  }
 }
 
 /*---------------------------------------------------- */
@@ -623,7 +706,6 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home-banner-area {
-  background: #ffffff;
   position: relative;
 }
 
@@ -733,7 +815,6 @@ button:focus {
 @media (max-width: 767px) {
   .header-right {
     position: relative;
-    background: url(../img/banner/banner-img.jpg) center no-repeat;
     background-size: cover;
     padding: 100px 120px;
     z-index: 1;
@@ -744,28 +825,15 @@ button:focus {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #000;
     content: "";
     opacity: .2;
     z-index: -1;
   }
   .header-right h1 {
-    color: #fff;
     margin-bottom: 30px;
   }
-  .header-right p {
-    color: #fff;
-  }
   .header-right .main_btn {
-    color: #fff;
     margin-top: 20px;
-  }
-  .header-right .main_btn img {
-    -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -ms-filter: invert(1);
-    -o-filter: invert(1);
-    filter: invert(1);
   }
 }
 
@@ -856,16 +924,6 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 767px) {
-  .home-banner-area.common-banner .header-right .page-link-wrap img {
-    -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -ms-filter: invert(1);
-    -o-filter: invert(1);
-    filter: invert(1);
-  }
-}
-
 .home-banner-area.common-banner .header-right .page-link-wrap .page_link a {
   font-size: 14px;
   color: #000;
@@ -874,12 +932,6 @@ button:focus {
   margin-right: 30px;
   position: relative;
   text-transform: capitalize;
-}
-
-@media (max-width: 767px) {
-  .home-banner-area.common-banner .header-right .page-link-wrap .page_link a {
-    color: #fff;
-  }
 }
 
 .home-banner-area.common-banner .header-right .page-link-wrap .page_link a:before {
@@ -986,12 +1038,6 @@ button:focus {
   }
 }
 
-@media (max-width: 991px) {
-  .popular-place-area .left-content {
-    display: none;
-  }
-}
-
 .popular-place-area .left-content .img2 {
   position: absolute;
   left: 50%;
@@ -1006,6 +1052,12 @@ button:focus {
 
 .popular-place-area .right-content .main_title {
   padding-right: 30px;
+}
+
+@media (max-width: 600px) {
+  .popular-place-area .right-content {
+    display: none;
+  }
 }
 
 @media (max-width: 615px) {
@@ -3388,10 +3440,6 @@ button:focus {
 
 b, sup, sub, u, del {
   color: #f8b600;
-}
-
-h1 {
-  font-size: 36px;
 }
 
 h2 {
