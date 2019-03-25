@@ -6,7 +6,7 @@ var options = {
 			  " 'NATURAL' GAS.", 
 			  " $$$.", 
 			  " RENEWABLE POWER.", 
-			  " SAFE FERTILIZER ", 
+			  " SAFE FERTILIZER.", 
 			  " CO2 EMISSION REDUCTION.",
 			  " QUALITY OF LIFE."],
 	typeSpeed: 40,
