@@ -57,7 +57,7 @@ h1 {
   font-family: "Open", sans-serif;
   font-weight: 400;
   color: #000;
-  font-size: 2em !important;
+  font-size: 2.5em;
 }
 
 h2,
@@ -71,7 +71,7 @@ h6 {
 }
 
 p {
-  font-size: 1em !important;
+  font-size: 1.2em;
   color: #666;
   line-height: 30px;
   font-weight: light;
@@ -127,10 +127,6 @@ button:focus {
   font-weight: light;
 }
 
-.home-banner-area {
-  background: url("../img/background.png") cover;
-}
-
 .column-margin {
   margin-bottom: 20px;
 }
@@ -141,11 +137,17 @@ button:focus {
 
 /* mobile only styles when the device is 0-600px in maximum width */
 @media only screen and (max-device-width: 600px) {
+
   h1 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
+
+  .main-title h1 {
+    font-size: 2em !important;
+  }
+
   .title-container {
-    margin: 25% 3% 10% 3%;
+    margin: 15% 3% 10% 3%;
   }
   .subtitle-text {
     width: 100%;
@@ -156,6 +158,8 @@ button:focus {
   }
   .home-banner-area {
     background: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .plant-image {
     width: 100%;
@@ -714,6 +718,8 @@ button:focus {
 ============================================================================================ */
 .home-banner-area {
   position: relative;
+  margin-bottom: 70px;
+  margin-top: 30px;
 }
 
 .home-banner-area .owl-nav {
@@ -3447,10 +3453,6 @@ button:focus {
 
 b, sup, sub, u, del {
   color: #f8b600;
-}
-
-h1 {
-  font-size: 2em;
 }
 
 h2 {
