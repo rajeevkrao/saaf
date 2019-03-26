@@ -57,7 +57,7 @@ h1 {
   font-family: "Open", sans-serif;
   font-weight: 400;
   color: #000;
-  font-size: 2em;
+  font-size: 2em !important;
 }
 
 h2,
@@ -71,7 +71,7 @@ h6 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1em !important;
   color: #666;
   line-height: 30px;
   font-weight: light;
