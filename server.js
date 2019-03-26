@@ -32,7 +32,7 @@ app.post('/_send_email', function(request, response) {
   	const text = "View this message in html"
 	const html = "NAME:" + name + "<br>" + message + "<br>" + "EMAIL: " + email;
 	const msg = {
-	  	to: 'vig9295@gmail.com',
+	  	to: 'aashish@socialalpha.org',
 	  	from: 'vig9295@gmail.com',
 	  	subject: subject,
 	  	text: text,

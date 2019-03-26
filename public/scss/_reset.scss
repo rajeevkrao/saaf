@@ -66,10 +66,11 @@ button:focus {
 
 .title-container {
     margin-left: 6%;
+    margin-right: 6%;
 }
 
 .subtitle-text {
-    width: 50%; 
+    width: 75%; 
     margin-bottom: 20px; 
     color: #666; 
     line-height: 30px; 
@@ -77,11 +78,15 @@ button:focus {
 }
 
 .home-banner-area {
-    background: url('../img/background.png') no-repeat right;
+    background: url('../img/background.png') cover;
 }
 
 .column-margin {
     margin-bottom: 20px;
+}
+
+.plant-image {
+    width: 60%
 }
 
 
@@ -110,6 +115,10 @@ and (max-device-width: 600px)
 
     .home-banner-area {
         background: none;
+    }
+
+    .plant-image {
+        width: 100%;
     }
 
     .side-image {

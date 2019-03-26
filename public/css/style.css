@@ -116,10 +116,11 @@ button:focus {
 /* CUSTOM STYLING */
 .title-container {
   margin-left: 6%;
+  margin-right: 6%;
 }
 
 .subtitle-text {
-  width: 50%;
+  width: 75%;
   margin-bottom: 20px;
   color: #666;
   line-height: 30px;
@@ -127,11 +128,15 @@ button:focus {
 }
 
 .home-banner-area {
-  background: url("../img/background.png") no-repeat right;
+  background: url("../img/background.png") cover;
 }
 
 .column-margin {
   margin-bottom: 20px;
+}
+
+.plant-image {
+  width: 60%;
 }
 
 /* mobile only styles when the device is 0-600px in maximum width */
@@ -151,6 +156,9 @@ button:focus {
   }
   .home-banner-area {
     background: none;
+  }
+  .plant-image {
+    width: 100%;
   }
   .side-image {
     display: none;
@@ -436,7 +444,6 @@ button:focus {
 /* =================================== */
 .canvus_menu {
   overflow: hidden;
-  position: fixed;
   left: 0px;
   top: 0px;
   z-index: 10;
