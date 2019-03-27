@@ -122,7 +122,7 @@ button:focus {
 .home-banner-area {
   background: url("/img/background2.png");
   background-size: cover;
-  padding-bottom: 15%;
+  padding-bottom: 15%
 }
 
 .subtitle-text {
@@ -163,6 +163,11 @@ button:focus {
     font-weight: light;
   }
   .home-banner-area {
+    background: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .home-banner-area2 {
     background: none;
     margin-bottom: 0px;
     margin-top: 0px;
