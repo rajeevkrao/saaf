@@ -119,6 +119,12 @@ button:focus {
   margin-right: 6%;
 }
 
+.home-banner-area {
+  background: url("/img/background.png");
+  background-size: cover;
+  padding-bottom: 15%;
+}
+
 .subtitle-text {
   width: 75%;
   margin-bottom: 20px;
