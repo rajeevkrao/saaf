@@ -126,7 +126,6 @@ button:focus {
 }
 
 .home-banner-area2 {
-  margin-top: 4%;
   margin-bottom: 4%
 }
 
@@ -267,7 +266,7 @@ button:focus {
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
