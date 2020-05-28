@@ -21,8 +21,7 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="js/three.min.js"></script>
-	<script src="loaders/GLTFLoader.js"></script>
+
 
 	<!--
 	<script>
@@ -116,8 +115,6 @@
 			</div>
 		</div>
 	</section>
-
-	<canvas id="scene"></canvas>
 	<!--================ End Home  =================-->
 
 	<!--================ Start Problem =================-->
@@ -176,44 +173,6 @@
 		</div>
 	</section>
 	<!--================ End How it Works =================-->
-
-	<!--================ 3D Model =========================-->
-
-
-				<!--<x-model src="/models/BioGas.obj"></x-model>-->
-	<div>
-
-	<script>
-		var loader = new THREE.GLTFLoader();
-
-// load a resource
-loader.load(
-	// resource URL
-	'/models/BioGas.gltf',
-	// called when resource is loaded
-	function ( object ) {
-
-		scene.add( object );
-
-	},
-	// called when loading is in progresses
-	function ( xhr ) {
-
-		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-
-	},
-	// called when loading has errors
-	function ( error ) {
-
-		console.log( 'An error happened' );
-
-	}
-);
-	</script>
-</div>
-			
-	<!--================ End of 3D Model =========================-->
-
 
 	<!--================ Start Customers =================-->
 	<div class="popular-place-area section_gap">
