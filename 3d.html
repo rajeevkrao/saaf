@@ -37,6 +37,22 @@
 					height:40vh;
 				}
 			}
+			@media(max-width:500px){
+				.phone{
+					display:block;
+				}
+				.pc{
+					display:none;
+				}
+			}
+			@media(min-width:500px){
+				.phone{
+					display:none;
+				}
+				.pc{
+					display:block;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -66,12 +82,47 @@
 	            </div>
 	        </div>
 	    </div>
-		<!--================ 3D Model =========================-->
-		<iframe src="https://3dwarehouse.sketchup.com/embed/fa675af3-6050-4351-8b8f-16827d20df1e" frameborder="0" scrolling="no"allowfullscreen></iframe>
-		<!--<canvas id="c"></canvas>-->
+
+		<section class="home-banner-area2 relative" style="">
+			<div class="container-fluid">
+				<div class="title-container">
+					<div class="main_title text-center" style="">
+						<img src="img/logo2.svg" alt="">
+					</div>
+	            	<!--<h1> FROM ORGANIC WASTE</h1>
+	                <h1 style="margin-bottom: 20px"> TO 
+	                	<span id="typed-container">
+	                		<span id="typed-demo"></span> 
+	                	</span>
+		            </h1>
+		            <p class="subtitle-text"> 
+		            	At Saaf Biogas, we make your organic waste and investment streams "renewable" by  innovative design, clean engineering, modular assembly, plug and play installation and lifelong operation and maintenance of your biogas plant. 
+		            </p>
+		            <a href="/contact" class="main_btn">
+						MANAGE YOUR WASTE
+						<img src="img/next.png" alt="">
+					</a>
+				</div>-->
+			</div>
+		</section>
+
+	    <section class="package-area" style="margin-bottom:5vh">
+	    	<div class="container">
+			    <h1 style="">3D MODEL</h1>
+				<!--================ 3D Model =========================-->
+				<iframe src="https://3dwarehouse.sketchup.com/embed/fa675af3-6050-4351-8b8f-16827d20df1e" frameborder="0" scrolling="no" allowfullscreen></iframe>
+				<div>
+					<div style="text-align: center" class="pc">
+						Use your mouse to navigate the 3d model
+					</div>
+				</div>
+			</div>
+		</section>
+		
 
 
-		<!--<script src="js/three.min.js"></script>-->
+		<!--<canvas id="c"></canvas>
+
 		<script type="module">
 			import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/build/three.module.js';
 			import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/examples/jsm/controls/OrbitControls.js';
@@ -178,14 +229,29 @@
 
 			main();
 
-		</script>
+		</script>-->
+
+		<section class="package-area">
+			<div class="container">
+				<p>The times they are changing. We talk about the 'butterfly effect' but now have firsthand experience of how one batty mistake in a single wet market somewhere can lead to a global pandemic. And just as quickly as we humans can destroy and self destruct, our battered environment has the natural resilience to recover and reconstruct.<br/><br/> 
+
+				Decentralization and Community self-reliance - things like 'going off-grid', 'zero discharge' and 'swaraj' will no longer remain merely fashion or fad. Post corona it could well become the logical response to energy, water, food and environmental security as communities, cities and countries embrace the universal need for health and hygiene with greater urgency.<br/><br/>
+
+				While governments figure out how to build travel bubbles to kickstart our globalized world, www.saafenergy.in invites you to take responsibility for your wet market, your wet kitchen and your wet waste via our latest SHE innovation for the changing times - THE COMMUNITY FOODWASTE GASBAG.<br/><br/>
+
+				sSo if you wish to leave being a gasbag to us,  please fill the form below for your very own Community Foodwaste GasBag for a safe and saaf planet.
+				</p>
+			</div>
+		</section>
+
 		<!--================ End of 3D Model =========================-->
-		<section class="contact_area section-gap" style="background-color: #EDEDED">
+		<section class="contact_area section-gap">
 	        <div class="container" style="margin-top: 40px; padding-top: 40px">
 	            <div class="row">
 	                <div class="col-lg-12">
 	                    <form class="row contact_form" action="/_send_email" method="post" id="contactForm" name="sentMessage" validate onSubmit="alert('Thank you for your submission');">
-	                        <div class="col-md-10">
+	                    	<div class="col-md-3"></div>
+	                        <div class="col-md-9">
 	                            <div class="form-group">
 	                                <input type="text" class="form-control" id="name" name="name" type="text" placeholder="Name *" required data-validation-required-message="Please enter your name">
 	                                <p class="help-block text-danger"></p>
@@ -209,5 +275,18 @@
 	            </div>
 	        </div>
 	    </section>
+	    <script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/stellar.js"></script>
+		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+		<script src="vendors/isotope/isotope-min.js"></script>
+		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+		<script src="vendors/jquery-ui/jquery-ui.js"></script>
+		<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendors/swiper/js/swiper.min.js"></script>
+		<script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
+		<script src="js/theme.js"></script>
 	</body>
 </html>
