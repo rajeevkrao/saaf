@@ -27,6 +27,10 @@ app.get('/contact',function(request, response){
 	response.sendFile(path.join(__dirname+'/contact.html'));
 });
 
+app.get('/sitemap',function(request, response){
+	response.sendFile(path.join(__dirname+'/sitemap.xml'));
+});
+
 app.post('/_send_email', function(request, response) {
 	var name = request.body.name;
 	var email = request.body.email;
