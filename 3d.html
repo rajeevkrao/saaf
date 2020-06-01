@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Saaf Biogas | Send Quote</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="vendors/scroll/jquery.mCustomScrollbar.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
 		<style>
 			body { margin: 0; }
 			canvas { 
 				display: block;
-				height:50vh;
-				margin-left:2vw;
+				height:70%;
+				width:95%;
+				margin:0vh 2.5%;
+			}
+			iframe{
+				width:95%;
+				margin:0vh 2.5%;
+				height:70vh;
+			}
+			@media(max-width:700px){
+				iframe{
+					height:40vh;
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<h1> HELLO WORLD </h1>
+		<!--================ Offcanvus Menu Area =================-->
+		<div class="side_menu">
+	        <div class="logo">
+	            <a href="/">
+	                <img src="img/logo2.svg" alt="">
+	            </a>
+	        </div>
+	        <ul class="list menu-left">
+	            <li>
+	                <a href="/">Home</a>
+	            </li>
+	            <li>
+	                <a href="/contact">Contact</a>
+	            </li>
+	        </ul>
+	    </div>
+	    <!--================ End Offcanvus Menu Area =================-->
+
+	    <!--================ Canvus Menu Area =================-->
+	    <div class="canvus_menu">
+	        <div class="container">
+	            <div class="toggle_icon" title="Menu Bar">
+	                <span></span>
+	            </div>
+	        </div>
+	    </div>
 		<!--================ 3D Model =========================-->
-		<canvas id="c"></canvas>
+		<iframe src="https://3dwarehouse.sketchup.com/embed/fa675af3-6050-4351-8b8f-16827d20df1e" frameborder="0" scrolling="no"allowfullscreen></iframe>
+		<!--<canvas id="c"></canvas>-->
+
 
 		<!--<script src="js/three.min.js"></script>-->
 		<script type="module">
@@ -67,7 +121,7 @@
 			  {
 			    const skyColor = 0xB1E1FF;  // light blue
 			    const groundColor = 0xB97A20;  // brownish orange
-			    const intensity = 0.5;
+			    const intensity = 1;
 			    const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
 			    scene.add(light);
 			  }
@@ -101,7 +155,7 @@
 			    const height = canvas.clientHeight;
 			    const needResize = canvas.width !== width || canvas.height !== height;
 			    if (needResize) {
-			      renderer.setSize(500, height, false);
+			      renderer.setSize(width, height, false);
 			    }
 			    return needResize;
 			  }
@@ -126,5 +180,34 @@
 
 		</script>
 		<!--================ End of 3D Model =========================-->
+		<section class="contact_area section-gap" style="background-color: #EDEDED">
+	        <div class="container" style="margin-top: 40px; padding-top: 40px">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <form class="row contact_form" action="/_send_email" method="post" id="contactForm" name="sentMessage" validate onSubmit="alert('Thank you for your submission');">
+	                        <div class="col-md-10">
+	                            <div class="form-group">
+	                                <input type="text" class="form-control" id="name" name="name" type="text" placeholder="Name *" required data-validation-required-message="Please enter your name">
+	                                <p class="help-block text-danger"></p>
+	                            </div>
+	                            <div class="form-group">
+	                                <input class="form-control" name="email" id="email" type="email" placeholder="Email *" required data-validation-required-message="Please enter your email address">
+	                                <p class="help-block text-danger"></p>
+	                            </div>
+	                            <div class="form-group">
+	                                <input class="form-control" name="subject" id="subject" placeholder="Phone Number *" type="tel">
+	                            </div>
+	                        </div>
+	                        <div class="col-md-12 text-right mb-5">
+	                            <button type="submit" value="submit" class="main_btn">
+	                                SEND QUOTE
+	                                <img src="img/next.png" alt="">
+	                            </button>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </section>
 	</body>
 </html>
