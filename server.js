@@ -7,7 +7,7 @@ var fs 			= require('fs');
 var app     	= express();
 
 const sgMail 	= require('@sendgrid/mail');
-sgMail.setApiKey("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");
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
 app.use(bodyParser.json()); // support json encoded bodies
@@ -80,7 +80,7 @@ app.post('/_send_quote', function(request, response) {
 		      disposition: "attachment"
 		    }
   		]
-	};s
+	};
 	sgMail.send(msg, function(err, json){
     	if(err) { 
     		console.log(err);
