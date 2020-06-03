@@ -65,7 +65,7 @@ app.post('/_send_quote', function(request, response) {
   	var message = request.body.message;
 
   	const text = "View this message in html"
-	const html = "Catalogue is in attachments in pdf format";
+	const html = `Hi ${name} <br/> Catalogue is in attachments in pdf format`;
 	const msg = {
 	  	to: email,
 	  	from: 'contact@saafenergy.in',
