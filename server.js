@@ -3,6 +3,7 @@ var express 	= require("express");
 var pg 			= require('pg');
 var path		= require('path');
 var bodyParser  = require('body-parser');
+var fs 			= require('fs');
 var app     	= express();
 
 const sgMail 	= require('@sendgrid/mail');
@@ -46,6 +47,40 @@ app.post('/_send_email', function(request, response) {
 	  	text: text,
 	  	html: html
 	};
+	sgMail.send(msg, function(err, json){
+    	if(err) { 
+    		console.log(err);
+    	}
+    	response.redirect('/');
+	});
+});
+
+pathToAttachment = `${__dirname}/SAAF_GASBAG_PRODUCT_CATALOG_DOMESTIC_MKT_VER_1.0.pdf`;
+attachment = fs.readFileSync(pathToAttachment).toString("base64");
+
+app.post('/_send_quote', function(request, response) {
+	var name = request.body.name;
+	var email = request.body.email;
+  	var subject = "SAAF Catalogue"; 
+  	var message = request.body.message;
+
+  	const text = "View this message in html"
+	const html = "Catalogue is in attachments in pdf format";
+	const msg = {
+	  	to: 'contact@saafenergy.in',
+	  	from: email,
+	  	subject: subject,
+	  	text: text,
+	  	html: html,
+	  	attachments: [
+		    {
+		      content: attachment,
+		      filename: "attachment.pdf",
+		      type: "application/pdf",
+		      disposition: "attachment"
+		    }
+  		]
+	};s
 	sgMail.send(msg, function(err, json){
     	if(err) { 
     		console.log(err);
