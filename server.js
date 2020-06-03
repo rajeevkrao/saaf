@@ -7,7 +7,7 @@ var fs 			= require('fs');
 var app     	= express();
 
 const sgMail 	= require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey("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");
 
 
 app.use(bodyParser.json()); // support json encoded bodies
@@ -67,8 +67,8 @@ app.post('/_send_quote', function(request, response) {
   	const text = "View this message in html"
 	const html = "Catalogue is in attachments in pdf format";
 	const msg = {
-	  	to: 'contact@saafenergy.in',
-	  	from: email,
+	  	to: email,
+	  	from: 'contact@saafenergy.in',
 	  	subject: subject,
 	  	text: text,
 	  	html: html,
