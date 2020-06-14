@@ -46,15 +46,6 @@
     		overflow: hidden;
     		text-overflow: ellipsis;
 			}
-			select#consider option{
-				max-width: 100%;
-    		overflow: hidden;
-    		white-space: normal;
-    		padding-right: 12px !important;
-    		word-wrap: break-word;
-    		text-overflow: inherit;
-    
-			}
 			select:active{
 				border-color: #fff transparent transparent transparent;
 			
@@ -64,19 +55,21 @@
 			}
 
 			select, option{
-				width:100% !important;
 				word-wrap: break-word !important;
 				color:#999;
 				font-size: 13px;
 				line-height: 26px;
 				padding:10px 0;
 				padding-left: 15px;
+				text-overflow: ellipsis !important;
 			}
 			select{
+				width:100% !important;
 				border-color: #eeeeee;
 			}
 			option{
 				font-size: 15px;
+				max-width: 1vw !important;
 				white-space: normal;
     		text-overflow: inherit;
     		height: 100% !important;
@@ -355,7 +348,7 @@
 															    <option value="Poultry Litter">Poultry Litter</option>
 															    <option value="other">Other</option>
 																</select>
-																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="organicWasteOther" id="organicWasteOther" type="text" placeholder="Please specify" />
+																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="organicWasteOther" name="organicWasteOther" type="text" placeholder="Please specify" />
 			                    </div>
 			                    <!--GasBag Capacity-->
 	                        <div class="form-group col-md-6" style="color:#999">
@@ -367,7 +360,7 @@
 															    <option value="1000">1000 Kg/d</option>
 															    <option value="other">Other</option>
 																</select>
-																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="capacityOther" id="capacityOther" type="text" placeholder="Please specify in Kg/d" />
+																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="capacityOther" name="capacityOther" type="text" placeholder="Please specify in Kg/d" />
 			                   </div>
 			                  </div>
 			                  <div class="row">
@@ -380,7 +373,7 @@
 															    <option value="Electricity">Electricity</option>
 															    <option value="other">Other</option>
 																</select>
-																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="useOther" id="useOther" type="text" placeholder="Please specify" />
+																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="useOther" name="useOther" type="text" placeholder="Please specify" />
 			                    </div>
 			                    <!--org_waste = Organic Waste-->
 	                        <div class="form-group col-md-6" style="color:#999">
@@ -390,7 +383,7 @@
 															    <option value="Agriculture & Organic Farming">Agriculture & Organic Farming</option>
 															    <option value="other">Other</option>
 																</select>
-																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="fertilizerOther" id="fertilizerOther" type="text" placeholder="Please specify" />
+																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="fertilizerOther" name="fertilizerOther" type="text" placeholder="Please specify" />
 			                    </div>
 			                  </div>
 			                  <div class="row">
@@ -404,7 +397,7 @@
 															    <option value="All of the above">All of the above</option>
 															    <option value="other">Other</option>
 																</select>
-																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="typeOther" id="typeOther" type="text" placeholder="Please specify" />
+																<input style="display: none; width:100%; margin-top: 2vh;" class="other" id="typeOther" name="typeOther" type="text" placeholder="Please specify" />
 			                    </div>
 			                  </div>
 	                    	</div>
@@ -453,11 +446,5 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/i18n/af.min.js" integrity="sha256-WUNWFSuW+PqBWjsKgoKmrhQ48CsQbeO/Yukp1bIk4o8=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="js/test.js"></script>
-		<script type="text/javascript"> 
-			var $select2 = $('.dropDown').select2({
-			    containerCssClass: "wrap"
-			})
-
-		</script>
 	</body>
 </html>

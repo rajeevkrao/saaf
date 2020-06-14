@@ -62,10 +62,25 @@ app.post('/_send_quote', function(request, response) {
 	var name = request.body.name;
 	var email = request.body.email;
   	var subject = "SAAF Catalogue"; 
-  	var message = request.body.message;
-
+  	var {number, companyName, plantLocation, disposal, organicWaste, capacity, use, fertilizer, type, organicWasteOther, capacityOther, useOther, fertilizerOther, typeOther} = request.body;
   	const text = "View this message in html"
-	const html = `Hi ${name} <br/> Catalogue is in attachments in pdf format`;
+  	function co(opt){
+  		if(opt!="other")
+  			return 1;
+  		else
+  			return 0;
+  	}
+	const html = `
+	Hi ${name} <br/> Catalogue is in attachments in pdf format<br/>
+	You have selected 
+	Plant Location : ${plantLocation}<br/>
+	Current Method of Disposal and Cost of Handling: ${disposal}<br/>
+	Type of Organic Waste : ${co(organicWaste)?organicWaste:organicWasteOther}<br/>
+	Capacity of GasBag : ${co(capacity)?capacity:capacityOther}<br/>
+	Use of BioGas : ${co(use)?use:useOther}<br/>
+	liquid digestate fertilizer usage : ${co(fertilizer)?fertilizer:fertilizerOther}<br/>
+	Reason for setting up the BioGas plant: ${co(type)?type:typeOther}
+	`;
 	const msg = {
 	  	to: email,
 	  	from: 'contact@saafenergy.in',
