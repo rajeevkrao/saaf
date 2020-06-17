@@ -20,7 +20,7 @@ app.get('/',function(request, response){
 	response.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.get('/3d',function(request, response){
+app.get('/gasbag',function(request, response){
 	response.sendFile(path.join(__dirname+'/3d.html'));
 });
 
