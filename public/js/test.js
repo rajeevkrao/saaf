@@ -1,3 +1,13 @@
+
+var tmSld=1;
+$('#list-tab a').on('click', function (e) {
+  e.preventDefault()
+  if(($(this).attr("id"))==tmSld)
+  	return;
+  $(`img#${tmSld}`).css("display","none");
+  tmSld=$(this).attr("id")
+  $(`img#${tmSld}`).css("display","block");
+})
 			function submition(){
 				/*var flag=0;
 				$(".dropDown").each(function(){
@@ -13,8 +23,9 @@
 			}
 
 			function onChngSel(self){
-			    if($(self).children("option:selected").val()=="other")
+			/*    if($(self).children("option:selected").val()=="other")
 			    	$(`#${$(self).attr("id")}Other`).css("display","block")
 			    else
 			    	$(`#${$(self).attr("id")}Other`).css("display","none")
+			*/
 			}

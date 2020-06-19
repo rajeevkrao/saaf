@@ -1,0 +1,166 @@
+.carousel-control-prev {
+	color:blue;
+}
+
+.carousel-control-next {
+	color:blue;
+}
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.buttongreen {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #4CAF50;
+}
+
+.buttongreen:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.media-body{
+	text-align: left;
+}
+
+.single-amenities {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+}
+
+.single-amenities:hover{
+  box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+}
+
+.wg{
+	/*text-align: left;*/
+	height:40px;
+}
+
+.tdmodel{
+	width:100%;
+	height: 100%;
+	display: none;
+}
+
+.scard-body{
+	border:0.00002rem solid black;
+	padding:5px;
+	margin:0vh 0px;
+	height:100%;
+	vertical-align: middle;
+}
+body { margin: 0; }
+.other{
+	/*border-color: #eeeeee !important;*/
+	border-width:thin;
+	color:#999;
+	padding-left: 15px;
+}
+#long{
+position: relative;
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100px;
+		height: 100%;
+		content: "";
+		background: linear-gradient(to right, transparent, white);
+		pointer-events: none;
+	}
+}
+.card{
+	margin:0 1vw;
+	padding:2vh 0.1vw !important;
+}
+#consider{
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+select:active{
+	border-color: #fff transparent transparent transparent;
+
+}
+select:focus{
+	border-color: #eeeeee;
+}
+
+sup{
+	color:black;
+	font-size: 0.5em;
+	top: -1.5vh;
+}
+
+select, option{
+	word-wrap: break-word !important;
+	color:#999;
+	font-size: 13px;
+	line-height: 26px;
+	padding:10px 0;
+	padding-left: 15px;
+	text-overflow: ellipsis !important;
+}
+select{
+	width:100% !important;
+	border-color: #eeeeee;
+}
+option{
+	font-size: 15px;
+	max-width: 1vw !important;
+	white-space: normal;
+	text-overflow: inherit;
+	height: 100% !important;
+	display: inline-block;
+	word-wrap: break-word !important;
+}
+canvas { 
+	display: block;
+	height:70%;
+	width:95%;
+	margin:0vh 2.5%;
+}
+iframe{
+	width:95%;
+	margin:0vh 2.5%;
+	height:70vh;
+}
+@media(max-width:700px){
+	iframe{
+		height:40vh;
+	}
+}
+@media(max-width:500px){
+	.phone{
+		display:block;
+	}
+	.pc{
+		display:none;
+	}
+}
+@media(min-width:500px){
+	.phone{
+		display:none;
+	}
+	.pc{
+		display:block;
+	}
+}
