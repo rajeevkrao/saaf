@@ -111,7 +111,7 @@ app.post('/_send_quote', function(request, response) {
 	Use of BioGas : ${use}<br/>
 	liquid digestate fertilizer usage : ${fertilizer}<br/>
 	Reason for setting up the BioGas plant: ${type}
-	`;
+	`; 
 	msg = {
 	  	to: 'contact@saafenergy.in',
 	  	from: 'contact@saafenergy.in',
