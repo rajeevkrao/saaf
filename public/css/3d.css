@@ -47,6 +47,17 @@
 	color: white;
 }
 
+section#cards .single-amenities{
+	margin: auto 20px;
+}
+
+@media(max-width: 500px){
+	section#model img{
+		height:30vh;
+		margin-bottom: 30px;
+	}
+}
+
 .media-body{
 	text-align: left;
 }
@@ -65,6 +76,23 @@
   transition: all .25s linear;
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
 }
+
+section#benf .row{
+	flex-wrap:initial;
+}
+
+@media(max-width:500px){
+	section#benf .row{
+		
+	}
+	section#benf .media{
+		margin: 15px 0px;
+	}		
+	.carousel-item{
+		padding-left: 0px;
+	}
+}
+
 
 .single-amenities:hover{
   box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);

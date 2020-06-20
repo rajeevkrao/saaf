@@ -1,1 +1,9 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><title>ionicons-v5-n</title><rect x='32' y='112' width='448' height='352' rx='48' ry='48' style='fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px'/><path d='M144,112V80a32,32,0,0,1,32-32H336a32,32,0,0,1,32,32v32' style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='208' x2='256' y2='368' style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='336' y1='288' x2='176' y2='288' style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+  <g>
+    <g>
+      <path d="m438.6,118.1h-49.2v-38.4c0-38-30.9-68.9-68.9-68.9h-122.1c-38,0-68.9,30.9-68.9,68.9v38.4h-55.8c-34.5,0-62.6,28.1-62.6,62.6v257.6c0,34.5 28.1,62.6 62.6,62.6h364.9c34.5,0 62.6-28.1 62.6-62.6v-257.6c-0.1-34.5-28.1-62.6-62.6-62.6zm-268.2-38.4c2.84217e-14-15.5 12.6-28.1 28.1-28.1h122.1c15.5,0 28.1,12.6 28.1,28.1v38.4h-178.3v-38.4zm-96.7,79.3h364.9c12,0 21.7,9.8 21.7,21.7v51h-188.2v-21.3c0-11.3-9.1-20.4-20.4-20.4-11.3,0-20.4,9.1-20.4,20.4v21.3h-179.3v-51c0-12 9.7-21.7 21.7-21.7zm364.9,301h-364.9c-12,0-21.7-9.7-21.7-21.7v-165.8h179.3v21.3c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-21.3h188.2v165.7c0,12-9.8,21.8-21.7,21.8z"/>
+    </g>
+  </g>
+</svg>
