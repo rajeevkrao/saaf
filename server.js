@@ -102,7 +102,7 @@ app.post('/_send_quote', function(request, response) {
     	}
     	response.redirect('/');
 	});
-	const html = `
+	html = `
 	${name} has requested for GasBagTM with<br/>
 	Plant Location : ${plantLocation}<br/>
 	Current Method of Disposal and Cost of Handling: ${disposal}<br/>
@@ -112,7 +112,7 @@ app.post('/_send_quote', function(request, response) {
 	liquid digestate fertilizer usage : ${fertilizer}<br/>
 	Reason for setting up the BioGas plant: ${type}
 	`;
-	const msg = {
+	msg = {
 	  	to: 'contact@saafenergy.in',
 	  	from: 'contact@saafenergy.in',
 	  	subject: subject,
