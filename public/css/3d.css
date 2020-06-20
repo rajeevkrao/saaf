@@ -19,10 +19,27 @@
 	cursor: pointer;
 }
 
+.carousel-item{
+	padding-left:40px;
+}
+
+.carousel-item h3{
+	margin:10px;
+}
+
 .buttongreen {
 	background-color: white; 
 	color: black; 
 	border: 2px solid #4CAF50;
+}
+
+.amenities-details{
+	padding-left: 0px;
+}
+
+.amenities-details p{
+	color:#666;
+	
 }
 
 .buttongreen:hover {
@@ -35,12 +52,16 @@
 }
 
 .single-amenities {
+  
   border: 1px solid #eee;
   padding: 20px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  -moz-transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+  -o-transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
   transition: all .25s linear;
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
 }
