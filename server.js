@@ -70,7 +70,7 @@ app.post('/_send_quote', function(request, response) {
   		else
   			return 0;
   	}*/
-	const html = `
+	var html = `
 	Hi ${name} <br/> Catalogue is in attachments in pdf format<br/>
 	You have selected 
 	Plant Location : ${plantLocation}<br/>
@@ -81,7 +81,7 @@ app.post('/_send_quote', function(request, response) {
 	liquid digestate fertilizer usage : ${fertilizer}<br/>
 	Reason for setting up the BioGas plant: ${type}
 	`;
-	const msg = { 
+	var msg = { 
 	  	to: email,
 	  	from: 'contact@saafenergy.in',
 	  	subject: subject,
