@@ -55,7 +55,7 @@ app.post('/_send_email', function(request, response) {
 	});
 });
 
-pathToAttachment = `${__dirname}/SAAF_GASBAG_PRODUCT_CATALOG_DOMESTIC_MKT_VER_1.0.pdf`;
+pathToAttachment = `${__dirname}/SAAF GASBAG E-CATALOG & QTN.pdf`;
 attachment = fs.readFileSync(pathToAttachment).toString("base64");
 
 app.post('/_send_quote', function(request, response) {
