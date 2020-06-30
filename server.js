@@ -55,7 +55,7 @@ app.post('/_send_email', function(request, response) {
 	});
 });
 
-pathToAttachment = `${__dirname}/SAAF GASBAG E-CATALOG & QTN.pdf`;
+pathToAttachment = `${__dirname}/SAAF GASBAG E-CATALOG & QTN_2020.pdf`;
 attachment = fs.readFileSync(pathToAttachment).toString("base64");
 
 app.post('/_send_quote', function(request, response) {
